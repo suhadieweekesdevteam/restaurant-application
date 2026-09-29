@@ -6,8 +6,8 @@ A bespoke, production-ready, full-featured restaurant web application built spec
 ---
 
 ## 🌟 Restaurant Information
-- **GitHub Repository**: [biswajitmaharanadevteam/restaurant-application](https://github.com/biswajitmaharanadevteam/restaurant-application)
-- **Live Deployment**: [https://biswajitmaharanadevteam.github.io/restaurant-application/](https://biswajitmaharanadevteam.github.io/restaurant-application/)
+- **GitHub Repository**: [suhadieweekesdevteam/restaurant-application](https://github.com/suhadieweekesdevteam/restaurant-application)
+- **Live Deployment**: [https://suhadieweekesdevteam.github.io/restaurant-application/](https://suhadieweekesdevteam.github.io/restaurant-application/)
 - **Establishment**: Banjaraa - Ek Anokhi Dawat
 - **Address**: Plot No. 1051/2758, Meherpalli, Cuttack-Puri Bypass Road, B.B. Nagar, Bhubaneswar, Odisha 751002
 - **Direct Phone**: [+91 93372 05169](tel:+919337205169)

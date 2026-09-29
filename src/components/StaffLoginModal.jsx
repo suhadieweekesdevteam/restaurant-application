@@ -47,30 +47,30 @@ export const StaffLoginModal = () => {
   };
 
   return (
-    <div className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-black/85 backdrop-blur-md overflow-y-auto animate-in fade-in">
-      <div className="glass-panel border border-amber-500/40 rounded-3xl max-w-lg w-full my-6 overflow-hidden shadow-2xl relative bg-[#0b0e17]">
+    <div className="fixed inset-0 z-50 flex items-center justify-center p-2.5 sm:p-4 bg-black/85 backdrop-blur-md animate-in fade-in duration-200">
+      <div className="glass-panel border border-amber-500/40 rounded-2xl sm:rounded-3xl max-w-lg w-full max-h-[92vh] flex flex-col overflow-hidden shadow-2xl relative bg-[#0b0e17] my-auto">
         
         {/* Header Bar */}
-        <div className="bg-gradient-to-r from-amber-950 via-stone-900 to-amber-950 p-6 border-b border-amber-500/30 flex items-center justify-between">
+        <div className="shrink-0 bg-gradient-to-r from-amber-950 via-stone-900 to-amber-950 px-4 py-3.5 sm:px-6 sm:py-4 border-b border-amber-500/30 flex items-center justify-between">
           <div className="flex items-center gap-3">
-            <div className="w-10 h-10 rounded-xl bg-amber-500/20 border border-amber-500/40 text-amber-400 flex items-center justify-center">
+            <div className="w-9 h-9 sm:w-10 sm:h-10 rounded-xl bg-amber-500/20 border border-amber-500/40 text-amber-400 flex items-center justify-center shrink-0">
               <ShieldCheck className="w-5 h-5" />
             </div>
             <div>
-              <h3 className="font-cinzel text-xl font-bold text-white">Staff & Kitchen Portal</h3>
-              <p className="text-xs text-amber-400/80">Banjaraa - Ek Anokhi Dawat</p>
+              <h3 className="font-cinzel text-lg sm:text-xl font-bold text-white">Staff & Kitchen Portal</h3>
+              <p className="text-[11px] sm:text-xs text-amber-400/80">Banjaraa - Ek Anokhi Dawat</p>
             </div>
           </div>
           <button
             onClick={() => setIsStaffLoginOpen(false)}
-            className="p-2 rounded-full text-stone-400 hover:text-white"
+            className="p-1.5 sm:p-2 rounded-full text-stone-400 hover:text-white cursor-pointer"
           >
             <X className="w-5 h-5" />
           </button>
         </div>
 
         {/* Content Body */}
-        <div className="p-6 space-y-6">
+        <div className="flex-1 overflow-y-auto p-4 sm:p-6 space-y-4">
           
           {/* Quick Demo Credentials Banner */}
           <div className="glass-panel-gold rounded-2xl p-4 border border-amber-500/40 space-y-3">

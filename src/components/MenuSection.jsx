@@ -391,44 +391,44 @@ export const MenuSection = () => {
 
       {/* Inspect Item Modal */}
       {inspectItem && (
-        <div className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-black/80 backdrop-blur-sm animate-in fade-in">
-          <div className="glass-panel border border-amber-500/40 rounded-3xl max-w-lg w-full overflow-hidden shadow-2xl relative">
+        <div className="fixed inset-0 z-50 flex items-center justify-center p-2.5 sm:p-4 bg-black/80 backdrop-blur-sm animate-in fade-in duration-200">
+          <div className="glass-panel border border-amber-500/40 rounded-2xl sm:rounded-3xl max-w-lg w-full max-h-[92vh] flex flex-col overflow-hidden shadow-2xl relative bg-[#0c0f18] my-auto">
             <button
               onClick={() => setInspectItem(null)}
-              className="absolute top-4 right-4 z-10 p-2 rounded-full bg-stone-950/80 text-stone-400 hover:text-white"
+              className="absolute top-3.5 right-3.5 z-10 p-1.5 sm:p-2 rounded-full bg-stone-950/80 text-stone-400 hover:text-white cursor-pointer"
             >
               <X className="w-5 h-5" />
             </button>
 
-            <div className="h-64 relative">
+            <div className="h-44 sm:h-52 shrink-0 relative">
               <img
                 src={inspectItem.image}
                 alt={inspectItem.name}
                 className="w-full h-full object-cover"
               />
-              <div className="absolute inset-0 bg-gradient-to-t from-stone-950 via-stone-950/30 to-transparent"></div>
-              <div className="absolute bottom-4 left-5 right-5">
-                <span className="text-xs uppercase text-amber-400 font-bold tracking-wider">{inspectItem.category}</span>
-                <h3 className="font-cinzel text-2xl font-bold text-white">{inspectItem.name}</h3>
+              <div className="absolute inset-0 bg-gradient-to-t from-[#0c0f18] via-stone-950/40 to-transparent"></div>
+              <div className="absolute bottom-3 left-4 right-4 sm:left-5 sm:right-5">
+                <span className="text-[11px] uppercase text-amber-400 font-bold tracking-wider">{inspectItem.category}</span>
+                <h3 className="font-cinzel text-xl sm:text-2xl font-bold text-white">{inspectItem.name}</h3>
               </div>
             </div>
 
-            <div className="p-6 space-y-4">
-              <p className="text-stone-300 text-sm leading-relaxed">{inspectItem.description}</p>
+            <div className="flex-1 overflow-y-auto p-4 sm:p-6 space-y-4">
+              <p className="text-stone-300 text-xs sm:text-sm leading-relaxed">{inspectItem.description}</p>
               
               <div className="grid grid-cols-2 gap-3 py-2 border-y border-stone-800 text-xs">
                 <div>
-                  <span className="text-stone-400 block">Spice Level</span>
+                  <span className="text-stone-400 block text-[11px]">Spice Level</span>
                   <span className="font-semibold text-amber-400">{inspectItem.spiceLevel}</span>
                 </div>
                 <div>
-                  <span className="text-stone-400 block">Dine-in Recommendation</span>
+                  <span className="text-stone-400 block text-[11px]">Dine-in Pairing</span>
                   <span className="font-semibold text-stone-200">Pair with Mohabbat Sharbat</span>
                 </div>
               </div>
 
               <div className="flex items-center justify-between pt-2">
-                <div className="text-2xl font-cinzel font-black text-amber-400">
+                <div className="text-xl sm:text-2xl font-cinzel font-black text-amber-400">
                   ₹{inspectItem.price}
                 </div>
                 <button
@@ -436,7 +436,7 @@ export const MenuSection = () => {
                     handleAddToCart(inspectItem);
                     setInspectItem(null);
                   }}
-                  className="px-6 py-2.5 rounded-xl bg-gradient-to-r from-amber-500 to-amber-600 text-stone-950 font-bold text-sm"
+                  className="px-5 py-2.5 rounded-xl bg-gradient-to-r from-amber-500 to-amber-600 hover:from-amber-400 hover:to-orange-400 text-stone-950 font-bold text-xs sm:text-sm cursor-pointer shadow-md transition-all hover:scale-105 active:scale-95"
                 >
                   Add to Cart
                 </button>

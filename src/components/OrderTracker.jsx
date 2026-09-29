@@ -55,29 +55,29 @@ export const OrderTracker = () => {
   };
 
   return (
-    <div className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-black/85 backdrop-blur-md overflow-y-auto animate-in fade-in">
-      <div className="glass-panel border border-amber-500/40 rounded-3xl max-w-2xl w-full my-6 overflow-hidden shadow-2xl relative bg-[#0c0f18]">
+    <div className="fixed inset-0 z-50 flex items-center justify-center p-2.5 sm:p-4 bg-black/85 backdrop-blur-md animate-in fade-in duration-200">
+      <div className="glass-panel border border-amber-500/40 rounded-2xl sm:rounded-3xl max-w-2xl w-full max-h-[92vh] flex flex-col overflow-hidden shadow-2xl relative bg-[#0c0f18] my-auto">
         
         {/* Tracker Header */}
-        <div className="bg-gradient-to-r from-amber-950 via-stone-900 to-amber-950 p-6 border-b border-amber-500/30 flex items-center justify-between">
+        <div className="shrink-0 bg-gradient-to-r from-amber-950 via-stone-900 to-amber-950 px-4 py-3.5 sm:px-6 sm:py-4 border-b border-amber-500/30 flex items-center justify-between">
           <div>
             <div className="flex items-center gap-2">
               <span className="w-2.5 h-2.5 rounded-full bg-emerald-400 animate-ping"></span>
               <span className="text-xs uppercase font-bold text-amber-400 tracking-wider">Live Dawat Tracker</span>
             </div>
-            <h3 className="font-cinzel text-xl font-bold text-white mt-1">
+            <h3 className="font-cinzel text-lg sm:text-xl font-bold text-white mt-1">
               Order #{activeOrder.id}
             </h3>
           </div>
           <button
             onClick={() => setIsOrderTrackerOpen(false)}
-            className="p-2 rounded-full bg-stone-900 text-stone-400 hover:text-white"
+            className="p-1.5 sm:p-2 rounded-full bg-stone-900 text-stone-400 hover:text-white cursor-pointer"
           >
             <X className="w-5 h-5" />
           </button>
         </div>
 
-        <div className="p-6 sm:p-8 space-y-8">
+        <div className="flex-1 overflow-y-auto p-4 sm:p-6 space-y-5 sm:space-y-6">
           
           {/* Estimated Time Card */}
           <div className="glass-panel-gold rounded-2xl p-5 border border-amber-500/40 flex flex-col sm:flex-row items-center justify-between gap-4 text-center sm:text-left">
